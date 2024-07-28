@@ -6,7 +6,7 @@
     border-radius: 50px;
     font-size: 18px;
     font-weight: 600;
-    background-color: rgba(224, 22, 22, 0.925);
+    background-color:#E02C6D;
     color: rgb(254, 254, 254);
     border: none;
     margin-top: 30px;
@@ -123,11 +123,43 @@ header{
     gap: 20px;
     padding: 30px;
 }
+.arrow{
+    font-size: 20px;
+    text-align: right;
+    margin-right: 40px;
+    color: #E02C6D;
+}
 
+/* freature */
+
+.freature{
+    display: flex;
+    margin: 100px;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.frature-title{
+    font-weight: 600;
+    font-size: 38px;
+}
 /* responsive */
 
 /* mobile device */
-@media (max-width:576px) {
+@media screen and (max-width:576px) {
+    .arrow{
+        margin-top: 15px;
+        margin-right: 25px;
+    }
+    .freature{
+        flex-direction: column;
+        margin:100px 10px;
+       /* padding: 15px; */
+    }
+    .freature img{
+        width: 100%;
+    }
     .navber{
         flex-direction: column;
     }
@@ -171,13 +203,9 @@ header{
     }
 }
 
-.arrow{
-    font-size: 20px;
-    text-align: right;
-    margin-right: 40px;
-}
+
 /* tablet device */
-@media (min-width:577px) and (max-width:992px) {
+@media screen and (min-width:577px) and (max-width:992px) {
     .banner-heading{
         font-size: 30px;
         font-weight: 700;
