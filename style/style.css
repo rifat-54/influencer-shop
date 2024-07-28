@@ -16,6 +16,9 @@ body{
     background-color: rgba(178, 186, 190, 0.141);
 }
 /* header */
+.nav-side-icon{
+    display: none;
+}
 header{
     margin: 40px 40px;
 }
@@ -172,6 +175,13 @@ footer h5{
 
 /* mobile device */
 @media screen and (max-width:576px) {
+    .nav-side-icon{
+        display: inline;
+    }
+    .nav-list{
+        display: none;
+    }
+    
     .footer-icon i{
         
         font-size: 24px;
@@ -189,7 +199,9 @@ footer h5{
         width: 100%;
     }
     .navber{
-        flex-direction: column;
+        /* flex-direction: column; */
+        justify-content: space-between;
+        align-items: center;
     }
     .banner{
         flex-direction: column-reverse;
